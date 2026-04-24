@@ -142,6 +142,25 @@
     }
 
     .section-title { text-align:center; margin-bottom:40px; }
+    .btn i {
+      font-size: 18px;
+   }
+    .btn-stack {
+  position: relative;
+  display: inline-block;
+}
+
+.back-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 0;
+}
+
+.front-btn {
+  position: relative;
+  z-index: 1;
+}
   </style>
 </head>
 <body>
@@ -173,7 +192,20 @@
 <section id="home" class="hero">
   <h1>Social Media Designer</h1>
   <p>I create engaging social media creatives that grow brands and increase reach.</p>
-  <a href="mailto:nivas952@gmail.com?subject=Project Inquiry&body=Hi, I want to work with you" target="_blank" class="btn btn-custom mt-3">Hire Me</a>
+  <div class="mt-3 d-flex justify-content-center gap-3 flex-wrap">
+    <a href="mailto:nivas952@gmail.com?subject=Project Inquiry&body=Hi, I want to work with you" 
+       class="btn btn-custom d-flex align-items-center gap-2">
+      <i class="bi bi-envelope-fill"></i>
+      Hire Me
+    </a>
+  
+    <a href="https://wa.me/919849153026?text=Hi, I want to work with you" 
+       target="_blank" 
+       class="btn btn-whatsapp d-flex align-items-center gap-2">
+      <i class="bi bi-whatsapp"></i>
+      WhatsApp
+    </a>
+</div>
 </section>
 
 <!-- Projects -->

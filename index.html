@@ -118,7 +118,26 @@
       transition:0.4s;
       object-fit: cover;
      }
+    
+    .btn-stack {
+  position: relative;
+  display: inline-block;
+}
 
+.back-btn {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 0;
+}
+
+.front-btn {
+  position: relative;
+  z-index: 1;
+}
+    .btn i {
+      font-size: 18px;
+   }
     .card:hover img { transform:scale(1.1); }
 
     .badge { transition:0.3s; cursor:pointer; }
@@ -142,25 +161,7 @@
     }
 
     .section-title { text-align:center; margin-bottom:40px; }
-    .btn i {
-      font-size: 18px;
-   }
-    .btn-stack {
-  position: relative;
-  display: inline-block;
-}
 
-.back-btn {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  z-index: 0;
-}
-
-.front-btn {
-  position: relative;
-  z-index: 1;
-}
   </style>
 </head>
 <body>
